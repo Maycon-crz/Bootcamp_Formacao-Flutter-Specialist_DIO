@@ -14,6 +14,11 @@ Aprimorando habilidade de desenvolver Aplicativos completos com Flutter com o Bo
 * Usa as melhores práticas de cada sistema operacional;
 * A camada de interação com o hardware é feita em C e C++;
 
+* Site do Dart: https://dart.dev/
+* https://dartpad.dev/?
+
+* Para criar um projeto dart: dart create nome_o_app
+
 ---
 
 * Link do repositório oficial do curso: https://github.com/digitalinnovationone/dio-flutter
