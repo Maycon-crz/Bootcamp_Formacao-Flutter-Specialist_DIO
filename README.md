@@ -13,6 +13,7 @@ Aprimorando habilidade de desenvolver Aplicativos completos com Flutter com o Bo
 * Usa a Linguagem Dart como base;
 * Usa as melhores práticas de cada sistema operacional;
 * A camada de interação com o hardware é feita em C e C++;
+* No dart podemos decladar variriáveis implícita e explicitamente ou seja com um típo específico ou sem um tipo específico;
 
 * Site do Dart: https://dart.dev/
 * https://dartpad.dev/?
