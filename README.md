@@ -20,6 +20,17 @@ Aprimorando habilidade de desenvolver Aplicativos completos com Flutter com o Bo
 
 * Para criar um projeto dart: dart create nome_o_app
 
+* Uma função é recursiva quando ela chama ela mesma;
+
+* O conceito de fatorial é muito utilizado no estudo de arranjos e permutações, a fim de facilitar os cálculos. Exemplos de fatorial:
+* Ex-1) 3! = 3 . 2 . 1 = 6
+* Ex-2) 4! = 4 . 3 . 2 . 1 = 24
+* Ex-3) 6! = 6 . 5 . 4 . 3 . 2 . 1 = 720
+
+* A vantagem de tipar é que você garante que a quela função vai receber um tipo especifico de valor;
+
+* Reutilização é muito importante;
+
 ---
 
 * Link do repositório oficial do curso: https://github.com/digitalinnovationone/dio-flutter
