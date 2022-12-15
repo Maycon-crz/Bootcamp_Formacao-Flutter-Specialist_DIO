@@ -33,11 +33,12 @@ Aprimorando habilidade de desenvolver Aplicativos completos com Flutter com o Bo
 * OO - Orientação a objetos:
 > Classes Abstratas não podem ser instânciadas;
 > Herança é quando uma classe herda de outra funções, variaveis, recursos;
-> Objetos Inversão de controle e injeçao de dependência
+> Objetos 
+> Inversão de controle e injeçao de dependência
 > Encapsulamento é quando "esconde" para não ficar  / quando torna privado;
 > SOLID são princípios para se alcançar a melhor forma da orientação a objetos;
 > Polimorfismo é quando utilizamos de varias formas o objeto;
-> DDD
+> DDD - Domain Driven Design é a separação em dominios que fazem mais sentido
 
 ---
 

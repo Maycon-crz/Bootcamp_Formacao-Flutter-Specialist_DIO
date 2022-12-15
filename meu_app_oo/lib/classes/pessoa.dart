@@ -1,4 +1,9 @@
 class Pessoa {
+  Pessoa(String nome, String endereco) {
+    _nome = nome;
+    _endereco = endereco;
+  }
+
   String _nome = ""; //Tornando privado ou seja encapsulando
   String _endereco = "";
 
@@ -16,5 +21,9 @@ class Pessoa {
 
   String getEndereco() {
     return _endereco;
+  }
+
+  String toString() {
+    return {"Nome": _nome, "Endereço": _endereco}.toString();
   }
 }
