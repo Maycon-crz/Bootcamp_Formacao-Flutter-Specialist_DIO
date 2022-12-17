@@ -1,8 +1,10 @@
 import 'package:meu_app_oo/classes/pessoa.dart';
+import 'package:meu_app_oo/enum/tipo_notificacao.dart';
 
 class PessoaJuridica extends Pessoa {
-  PessoaJuridica(String nome, String endereco, String cnpj)
-      : super(nome, endereco) {
+  PessoaJuridica(String nome, String endereco, String cnpj,
+      TipoNotificacao tipoNotificacao)
+      : super(nome, endereco, tipoNotificacao: TipoNotificacao.NENHUM) {
     _cnpj = cnpj;
   }
 
@@ -18,7 +20,11 @@ class PessoaJuridica extends Pessoa {
 
   @override
   String toString() {
-    return {"Nome": getNome(), "Endereço": getEndereco(), "cnpj": _cnpj}
-        .toString();
+    return {
+      "Nome": getNome(),
+      "Endereço": getEndereco(),
+      "cnpj": _cnpj,
+      "TipoNotificacao": getTipoNotificacao(),
+    }.toString();
   }
 }
