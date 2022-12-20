@@ -40,6 +40,10 @@ Aprimorando habilidade de desenvolver Aplicativos completos com Flutter com o Bo
 > Polimorfismo é quando utilizamos de varias formas o objeto;
 > DDD - Domain Driven Design é a separação em dominios que fazem mais sentido;
 > Enum controle de fluxo, ajuda a tomar melhor desições para o sistema padronizando as opções que podem ser selecionadas, não é uma classe é como se fosse uma lista de opções possiveis, para as opções não ficarem abertas e terem um padrão;
+> Lint Boas práticas de programação existe para Flutter e para Dart;
+> try{}catch{}finally{} Servem para tenhamos o controle da aplicação independente se der erro ou não ajuda a deixar mais segura também;
+
+
 
 
 ---
