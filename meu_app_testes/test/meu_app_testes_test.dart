@@ -35,4 +35,10 @@ void main() {
       );
     },
   );
+
+//   test("Retornar CEP", () async {
+//     var body = await app.retornarCEP('01001-000');
+//     print(body);
+//     expect(body['bairro'], equals("Praça da Se"));
+//   });
 }
