@@ -6,6 +6,7 @@ class DesafioCalculadoraImc {
     imc = pessoa.getPeso() / (pessoa.getAltura() * pessoa.getAltura());
     imc = double.parse(imc.toStringAsFixed(4));
     pessoa.setImc(imc);
+    print(imc);
     return pessoa;
   }
 }
