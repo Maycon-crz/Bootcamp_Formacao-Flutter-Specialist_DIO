@@ -16,7 +16,9 @@ void main(List<String> arguments) {
   DesafioCalculadoraImc calculadora = DesafioCalculadoraImc();
   Pessoa pessoa = Pessoa();
   pessoa.setNome(nome);
-  pessoa.setAltura(peso);
-  pessoa.setPeso(altura);
-  calculadora.calculoDeIMC(pessoa);
+  pessoa.setPeso(peso);
+  pessoa.setAltura(altura);
+  pessoa = calculadora.calculoDeIMC(pessoa);
+  print(
+      "${pessoa.getNome()} o cálculo do seu IMC resultou em: ${pessoa.getImc()}");
 }

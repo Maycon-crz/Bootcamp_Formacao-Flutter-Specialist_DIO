@@ -7,8 +7,8 @@ void main() {
     DesafioCalculadoraImc calculadora = DesafioCalculadoraImc();
     Pessoa pessoa = Pessoa();
     pessoa.setNome("Maycon");
-    pessoa.setAltura(1.70);
+    pessoa.setAltura(1.67);
     pessoa.setPeso(60);
-    expect(calculadora.calculoDeIMC(pessoa).getImc(), 20.7612);
+    expect(calculadora.calculoDeIMC(pessoa).getImc(), 21.5);
   });
 }

@@ -20,19 +20,19 @@ class Pessoa {
     return _imc!;
   }
 
-  void setNome(nome) {
+  void setNome(String? nome) {
     _nome = nome;
   }
 
-  void setPeso(peso) {
+  void setPeso(int? peso) {
     _peso = peso;
   }
 
-  void setAltura(altura) {
+  void setAltura(double? altura) {
     _altura = altura;
   }
 
-  void setImc(imc) {
+  void setImc(double? imc) {
     _imc = imc;
   }
 }
