@@ -46,7 +46,9 @@ Aprimorando habilidade de desenvolver Aplicativos completos com Flutter com o Bo
 * o meu_app_testes só deu erro depois que tentei adicionar o http para fazer teste de mock no viacep eu adicionei como se fosse flutter pode ser por isso a casa do erro;
 
 
-
+---
+Exemplo de comando de criação de app para ser subido a loja:
+flutter create -t app -a kotlin -i swift --org com.mayconnascimento.dioapp.trilhaapp trilhaapp
 ---
 
 * Link do repositório oficial do curso: https://github.com/digitalinnovationone/dio-flutter
