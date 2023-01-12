@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:trilhaapp/repositories/nivel_repository.dart';
 
 class DadosCadastrais extends StatefulWidget {
   const DadosCadastrais({Key? key}) : super(key: key);
@@ -11,8 +12,16 @@ class DadosCadastrais extends StatefulWidget {
 class _DadosCadastraisState extends State<DadosCadastrais> {
   TextEditingController nomeController = TextEditingController(text: "");
   final datePickerController = TextEditingController(text: "");
-
   DateTime? dataNascimento;
+  var nivelRepository = NivelRepository();
+  var nives = [];
+  var nivelSelecionado = "";
+
+  @override
+  void initState() {
+    nives = nivelRepository.retornaNiveis();
+    super.initState();
+  }
 
   Text returnText(String texto) {
     return Text(
@@ -52,6 +61,26 @@ class _DadosCadastraisState extends State<DadosCadastrais> {
                   dataNascimento = data;
                 }
               },
+            ),
+            returnText("Nível de Experiência"),
+            Column(
+              children: nives
+                  .map(
+                    (nivel) => RadioListTile(
+                      dense: true,
+                      title: Text(nivel.toString()),
+                      selected: nivelSelecionado == nivel,
+                      value: nivel.toString(),
+                      groupValue: nivelSelecionado,
+                      onChanged: (value) {
+                        print(value);
+                        setState(() {
+                          nivelSelecionado = value.toString();
+                        });
+                      },
+                    ),
+                  )
+                  .toList(),
             ),
             TextButton(
                 onPressed: () {
