@@ -4,6 +4,7 @@ import 'package:trilhaapp/pages/pagina1.dart';
 import 'package:trilhaapp/pages/pagina2.dart';
 import 'package:trilhaapp/pages/pagina3.dart';
 import 'package:trilhaapp/services/gerador_numero_aleatorio_service.dart';
+import 'package:trilhaapp/shared/widgets/custom_drawer.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -27,29 +28,7 @@ class _MainPageState extends State<MainPage> {
         appBar: AppBar(
           title: const Text("Meu App"),
         ),
-        drawer: Drawer(
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Column(
-              children: [
-                const SizedBox(height: 10),
-                InkWell(
-                  child: const Text("Dados Cadastrais"),
-                  onTap: () {
-                    Navigator.pop(context);
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const DadosCadastrais(),
-                      ),
-                    );
-                  },
-                ),
-                const SizedBox(height: 10),
-              ],
-            ),
-          ),
-        ),
+        drawer: CustomDrawer(),
         body: Column(
           children: [
             Expanded(
