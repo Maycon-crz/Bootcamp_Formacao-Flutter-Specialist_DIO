@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trilhaapp/pages/dados_cadastrais.dart';
+import 'package:trilhaapp/pages/login_page.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({Key? key}) : super(key: key);
@@ -98,6 +99,51 @@ class CustomDrawer extends StatelessWidget {
                             ],
                           ),
                         ),
+                      );
+                    });
+              },
+            ),
+            const Divider(),
+            const SizedBox(height: 5),
+            InkWell(
+              child: Row(
+                children: const [
+                  Icon(Icons.pan_tool),
+                  Text("Sair"),
+                ],
+              ),
+              onTap: () {
+                showDialog(
+                    context: context,
+                    builder: (BuildContext ct) {
+                      return AlertDialog(
+                        title: const Text("Meu App"),
+                        alignment: Alignment.centerLeft,
+                        elevation: 8,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30)),
+                        content: Wrap(
+                          children: const [
+                            Text("Deseja Realmente sair do aplicativo"),
+                          ],
+                        ),
+                        actions: [
+                          TextButton(
+                            onPressed: () {
+                              Navigator.pushReplacement(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const LoginPage()));
+                            },
+                            child: const Text("Sim"),
+                          ),
+                          TextButton(
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
+                            child: const Text("Não"),
+                          )
+                        ],
                       );
                     });
               },
