@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:trilhaapp/pages/dados_cadastrais.dart';
-import 'package:trilhaapp/pages/pagina1.dart';
+import 'package:trilhaapp/pages/card_page.dart';
 import 'package:trilhaapp/pages/pagina2.dart';
 import 'package:trilhaapp/pages/pagina3.dart';
-import 'package:trilhaapp/services/gerador_numero_aleatorio_service.dart';
 import 'package:trilhaapp/shared/widgets/custom_drawer.dart';
 
 class MainPage extends StatefulWidget {
@@ -28,7 +26,7 @@ class _MainPageState extends State<MainPage> {
         appBar: AppBar(
           title: const Text("Meu App"),
         ),
-        drawer: CustomDrawer(),
+        drawer: const CustomDrawer(),
         body: Column(
           children: [
             Expanded(
@@ -40,7 +38,7 @@ class _MainPageState extends State<MainPage> {
                   });
                 },
                 children: const [
-                  Pagina1(),
+                  CardPage(),
                   Pagina2(),
                   Pagina3(),
                 ],
