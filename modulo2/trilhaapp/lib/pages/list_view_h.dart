@@ -15,10 +15,10 @@ class _ListViewPageState extends State<ListViewPage> {
       children: [
         ListTile(
           leading: Image.asset(AppImage.img2),
-          title: Text("Usuario 2"),
+          title: const Text("Usuario 2"),
           subtitle: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
+            children: const [
               Text("Olá, Tudo bem?"),
               Text("08:59"),
             ],
