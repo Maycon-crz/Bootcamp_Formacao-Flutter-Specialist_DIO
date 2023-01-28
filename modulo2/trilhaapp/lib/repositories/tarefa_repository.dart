@@ -23,6 +23,11 @@ class TarefaRepository {
 
   Future<List<Tarefa>> listarTarefasNaoConcluidas() async {
     await Future.delayed(const Duration(microseconds: 100));
-    return _tarefas.where((tarefa) => tarefa.getConluido()).toList();
+    return _tarefas.where((tarefa) => !tarefa.getConluido()).toList();
+  }
+
+  Future<void> remove(String id) async {
+    await Future.delayed(const Duration(milliseconds: 100));
+    _tarefas.remove(_tarefas.where((tarefa) => tarefa.getId() == id).first);
   }
 }
