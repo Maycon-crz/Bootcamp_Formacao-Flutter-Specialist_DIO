@@ -20,10 +20,7 @@ class _MainPageState extends State<MainPage> {
   PageController controller = PageController(initialPage: 0);
 
   @override
-  Widget build(BuildContext context) {
-    //////////////////
-    //////////////////PAREI EM CONHECENDO O DRAWER!!!
-    //////////////////
+  Widget build(BuildContext context) {    
     return Scaffold(
         appBar: AppBar(
           title: const Text("Meu App"),
