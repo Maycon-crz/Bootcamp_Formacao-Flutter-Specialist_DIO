@@ -1,3 +1,4 @@
+import 'package:calculadora_imc_flutter/model/Pessoa.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -17,17 +18,17 @@ class HomePage extends StatelessWidget {
           children: [
             const Text("Indice de Massa Corporal"),
             Container(height: 30),
-            const Text("Altura"),
-            TextFormField(decoration: stylesOfInputs),
-            Container(height: 30),
             const Text("Peso"),
             TextFormField(
               decoration: stylesOfInputs,
             ),
             Container(height: 30),
+            const Text("Altura"),
+            TextFormField(decoration: stylesOfInputs),
+            Container(height: 30),
             ElevatedButton(
               onPressed: () {
-                
+                Pessoa("", 50, 1.67, 0.0);
               },
               child: const Text("Calcular IMC"),
             ),

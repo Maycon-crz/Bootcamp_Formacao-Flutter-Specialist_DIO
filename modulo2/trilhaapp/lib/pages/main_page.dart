@@ -52,10 +52,7 @@ class _MainPageState extends State<MainPage> {
                 },
                 currentIndex: posicaoPagina,
                 items: const [
-                  BottomNavigationBarItem(
-                    label: "Pag1",
-                    icon: Icon(Icons.home),
-                  ),
+                  
                   BottomNavigationBarItem(
                     label: "Pag2",
                     icon: Icon(Icons.home),
