@@ -1,8 +1,16 @@
+import 'package:calculadora_imc_flutter/controller/imc_conttroller.dart';
 import 'package:calculadora_imc_flutter/model/Pessoa.dart';
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  ImcConttroller imcConttroller = ImcConttroller();
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +36,7 @@ class HomePage extends StatelessWidget {
             Container(height: 30),
             ElevatedButton(
               onPressed: () {
-                Pessoa("", 50, 1.67, 0.0);
+                print(imcConttroller.validarImc(Pessoa("", 50, 1.67, 0.0)));
               },
               child: const Text("Calcular IMC"),
             ),
