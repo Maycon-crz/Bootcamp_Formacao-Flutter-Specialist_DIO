@@ -1,5 +1,4 @@
 import 'package:calculadora_imc_flutter/controller/imc_conttroller.dart';
-import 'package:calculadora_imc_flutter/model/Pessoa.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -10,6 +9,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  TextEditingController pesoController = TextEditingController();
+  TextEditingController alturaController = TextEditingController();
   ImcConttroller imcConttroller = ImcConttroller();
 
   @override
@@ -28,15 +29,20 @@ class _HomePageState extends State<HomePage> {
             Container(height: 30),
             const Text("Peso"),
             TextFormField(
+              controller: pesoController,
               decoration: stylesOfInputs,
             ),
             Container(height: 30),
             const Text("Altura"),
-            TextFormField(decoration: stylesOfInputs),
+            TextFormField(
+              controller: alturaController,
+              decoration: stylesOfInputs,
+            ),
             Container(height: 30),
             ElevatedButton(
               onPressed: () {
-                print(imcConttroller.validarImc(Pessoa("", 50, 1.67, 0.0)));
+                print(imcConttroller.validarImc(
+                    "Nome", pesoController.text, alturaController.text));
               },
               child: const Text("Calcular IMC"),
             ),
